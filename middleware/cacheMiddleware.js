@@ -1,5 +1,5 @@
 let cache = {};
-const TTL_MS = 60 * 1000; // 1 minute in milliseconds
+const TTL_MS = 60 * 1000;
 
 function cacheMiddleware(req, res, next) {
   if (req.method !== "GET") {
